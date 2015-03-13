@@ -36,3 +36,24 @@ public function registerBundles()
     );
 }
 ```
+
+### Usage
+show logs from prod.log level error or higher (CRITICAL, ALERT, EMERGENCY) 
+
+    app/console log:view prod.log --level=error
+    
+show logs for given chanal "security"
+
+    app/console log:view prod.log --logger=security
+    
+group errors and order then, this will allow to find most occurred logs
+
+    app/console log:view prod.log --group
+    
+group and limit result to 10 (log must be at least 10 times or any other given number). 
+
+    app/console log:view prod.log --group --having=10
+    
+filtering by start and/or end date
+
+    app/console log:view prod.log --start=01-03-2015 --end=05-03-2015

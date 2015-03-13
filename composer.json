@@ -1,7 +1,15 @@
 {
   "name": "w3docs/log-viewer-bundle",
   "type": "symfony-bundle",
-  "license": "Apache",
+  "description": "W3DocsLogViewerBundle allows to filter, group and analyse symfony2 log files",
+  "keywords": ["log", "view", "viewer", "parser"],
+  "license": "MIT",
+  "authors": [
+      {
+          "name": "Vazgen Manukyan",
+          "email": "vazgen.manukyan@gmail.com"
+      }
+  ],
   "autoload": {
     "psr-0": { "W3docs\\LogViewerBundle": "" }
   },

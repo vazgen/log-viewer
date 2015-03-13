@@ -7,6 +7,7 @@
  */
 
 namespace W3docs\LogViewerBundle;
+
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
 class W3docsLogViewerBundle extends Bundle

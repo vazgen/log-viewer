@@ -16,7 +16,7 @@ use Dubture\Monolog\Reader\LogReader;
  *
  * @author Vazgen Manukyan <vazgen.manukyan@gmail.com>
  */
-class LogViewerCommand extends ClientBaseCommand
+class LogViewerCommand
 {
 
     /**

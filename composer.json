@@ -1,5 +1,5 @@
 {
-  "name": "w3docs/log-viewer-bundle",
+  "name": "w3docs/log-viewer",
   "type": "symfony-bundle",
   "license": "Apache",
   "autoload": {

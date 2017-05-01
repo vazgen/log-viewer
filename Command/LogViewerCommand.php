@@ -4,6 +4,7 @@ namespace W3docs\LogViewerBundle\Command;
 
 use Symfony\Bundle\FrameworkBundle\Command\ContainerAwareCommand;
 use Symfony\Component\Console\Input\InputArgument;
+use Symfony\Component\Console\Helper\ProgressBar;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Output\OutputInterface;
@@ -61,9 +62,6 @@ class LogViewerCommand extends ContainerAwareCommand
         //
         $lines = count(file($file));
 
-        // start progress
-        $progress = $this->getApplication()->getHelperSet()->get('progress');
-
         // final logs
         $logs = array();
 
@@ -106,7 +104,7 @@ class LogViewerCommand extends ContainerAwareCommand
 
             // report about current word
             $reader = new LogReader($file, 0);
-            $progress->start($output, $lines);
+            $progress = new ProgressBar($output, $lines);
 
             foreach ($reader as $log) {
                 $progress->advance();

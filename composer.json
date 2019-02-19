@@ -15,6 +15,6 @@
   },
   "require": {
     "ddtraceweb/monolog-parser": "1.*"
-  },
+  }
 }
 

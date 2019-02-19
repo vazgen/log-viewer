@@ -11,7 +11,7 @@
       }
   ],
   "autoload": {
-    "psr-4": { "W3docs\\LogViewerBundle": "" }
+    "psr-4": { "W3docs\\LogViewerBundle\\": "" }
   },
   "require": {
     "ddtraceweb/monolog-parser": "1.*"
